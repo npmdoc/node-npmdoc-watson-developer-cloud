@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"watson-developer-cloud",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "watson-developer-cloud",
+    "description": "api documentation for [watson-developer-cloud (v2.28.0)](https://github.com/watson-developer-cloud/node-sdk#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-watson-developer-cloud.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-watson-developer-cloud) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-watson-developer-cloud.svg)](https://travis-ci.org/npmdoc/node-npmdoc-watson-developer-cloud)",
     "devDependencies": {
-        "watson-developer-cloud": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
-        "utility2": "kaizhu256/node-utility2#alpha"
+        "utility2": "kaizhu256/node-utility2#alpha",
+        "watson-developer-cloud": "*"
     },
-    "name":"npmdoc-watson-developer-cloud",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-watson-developer-cloud",
+    "keywords": [
+        "documentation",
+        "watson-developer-cloud"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_watson_developer_cloud.js",
+    "name": "npmdoc-watson-developer-cloud",
+    "nameAlias": "npmdoc_watson_developer_cloud",
+    "nameOriginal": "npmdoc-watson-developer-cloud",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-watson-developer-cloud"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
