@@ -1,6 +1,6 @@
 # npmdoc-watson-developer-cloud
 
-#### api documentation for  [watson-developer-cloud (v2.28.1)](https://github.com/watson-developer-cloud/node-sdk#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-watson-developer-cloud.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-watson-developer-cloud) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-watson-developer-cloud.svg)](https://travis-ci.org/npmdoc/node-npmdoc-watson-developer-cloud)
+#### basic api documentation for  [watson-developer-cloud (v2.29.0)](https://github.com/watson-developer-cloud/node-sdk#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-watson-developer-cloud.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-watson-developer-cloud) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-watson-developer-cloud.svg)](https://travis-ci.org/npmdoc/node-npmdoc-watson-developer-cloud)
 
 #### Client library to use the IBM Watson Services and AlchemyAPI
 
@@ -47,7 +47,7 @@
         "isstream": "~0.1.2",
         "object.omit": "~2.0.0",
         "object.pick": "~1.2.0",
-        "request": "~2.79.0",
+        "request": "~2.81.0",
         "solr-client": "~0.6.0",
         "string": "3.3.3",
         "vcap_services": "~0.3.0",
@@ -57,7 +57,7 @@
     "devDependencies": {
         "browserify": "^14.0.0",
         "concat-stream": "^1.5.1",
-        "dependency-lint": "^4.2.0",
+        "dependency-lint": "^5.0.1",
         "eslint": "^3.14.1",
         "eslint-config-google": "^0.7.1",
         "eslint-config-prettier": "git+https://github.com/nfriedly/eslint-config-prettier.git#nfriedly-patch-1",
@@ -73,7 +73,7 @@
         "mocha": "^3.2.0",
         "nock": "^9.0.2",
         "object.assign": "^4.0.4",
-        "prettier": "^0.18.0",
+        "prettier": "^1.1.0",
         "shebang-loader": "0.0.1",
         "uglify-js": "^2.7.0",
         "watchify": "^3.7.0",
@@ -82,13 +82,13 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "0eac50d73701ad443939258a7c6654431c523f72",
-        "tarball": "https://registry.npmjs.org/watson-developer-cloud/-/watson-developer-cloud-2.28.1.tgz"
+        "shasum": "4a343a8dc3116113ce8b6d047f62470c60183ac5",
+        "tarball": "https://registry.npmjs.org/watson-developer-cloud/-/watson-developer-cloud-2.29.0.tgz"
     },
     "engines": {
         "node": ">=4"
     },
-    "gitHead": "a87a26b9309083b837098ac72f1ff23a3f36724c",
+    "gitHead": "7f4ad30a69f6994b930df2f464f7f4a7bf6fb792",
     "homepage": "https://github.com/watson-developer-cloud/node-sdk#readme",
     "keywords": [
         "ibm",
@@ -158,7 +158,8 @@
         "watch-doc": "nodemon --watch ./ --ext js,tmpl,json --ignore dist/ --ignore doc/ --ignore test/ --ignore examples/ --exec npm run doc",
         "watchify": "watchify index.js --standalone Watson --outfile dist/watson.js --debug --verbose"
     },
-    "version": "2.28.1"
+    "version": "2.29.0",
+    "bin": {}
 }
 ```
 
